@@ -48,7 +48,6 @@
 	</dependencies>
 
 	<build>
-		<finalName>spring_jenkins</finalName>
 		<plugins>
 			
 			<plugin>

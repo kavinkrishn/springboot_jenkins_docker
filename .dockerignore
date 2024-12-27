@@ -1,3 +1,4 @@
-# Exclude everything in target except the JAR
+# Ignore everything in target except the JAR file
 target/*
-!target/spring_jenkins.jar
+!target/spring_jenkins-0.0.1-SNAPSHOT.jar
+

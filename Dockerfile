@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim
 MAINTAINER eazybytes.com
 
 # Copy the Spring Boot application JAR file to the container
-COPY target/spring_jenkins.jar spring_jenkins.jar
+COPY target/spring_jenkins-0.0.1-SNAPSHOT.jar spring_jenkins.jar
 
 # Run the application
 ENTRYPOINT ["java", "-jar", "/spring_jenkins.jar"]
