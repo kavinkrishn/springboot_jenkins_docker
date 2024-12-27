@@ -1,10 +1,13 @@
-# Use the OpenJDK 17 image as the base
+# Use OpenJDK 17 as the base image
 FROM openjdk:17-jdk-slim
 
-#Information around who maintains the image
-MAINTAINER eazybytes.com
+# Set the working directory
+WORKDIR /app
 
-# Copy the Spring Boot application JAR file to the container
+# Expose port 8081
+EXPOSE 8081
+
+# Copy the Spring Boot JAR file
 COPY target/spring_jenkins-0.0.1-SNAPSHOT.jar spring_jenkins.jar
 
 # Run the application
