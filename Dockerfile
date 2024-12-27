@@ -2,7 +2,7 @@
 FROM openjdk:17-jdk-slim
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /target
 
 # Expose port 8081
 EXPOSE 8081
