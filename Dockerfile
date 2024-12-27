@@ -8,7 +8,7 @@ WORKDIR /target
 EXPOSE 8081
 
 # Copy the Spring Boot application JAR file to the container
-COPY target/spring_jenkins.jar spring_jenkins.jar
+COPY spring_jenkins.jar spring_jenkins.jar
 
 # Run the application
 ENTRYPOINT ["java", "-jar", "/spring_jenkins.jar"]
