@@ -2,8 +2,8 @@ FROM openjdk:17-jdk-slim
 
 WORKDIR /service-registry
 
-COPY target/*.jar service-registry.jar
+COPY --from=build /target/spring_jenkins-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8081
 
-ENTRYPOINT ["java", "-jar", "service-registry.jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
